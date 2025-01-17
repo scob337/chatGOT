@@ -1,0 +1,2 @@
+let API_KEY = "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";
+export { API_KEY };

@@ -1,0 +1,212 @@
+.chatbody {
+    overflow: hidden;
+    padding: 0 10px;
+    width: 100% !important;
+}
+
+
+.chat-header .chat-title {
+    background-color: #242526;
+    color: #fff;
+}
+
+.chat-header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chatbody {
+    height: 75vh;
+    overflow-y: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.chatbody .chat-box {
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://thumbs.dreamstime.com/b/robot-icon-chat-bot-sign-support-service-concept-chatbot-character-flat-style-robot-icon-chat-bot-sign-support-service-120298004.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+.chat-box .spinner-border{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    display: none;
+}
+
+.bot-answer {
+    margin: 10px;
+    width: 70%;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    margin-right: auto;
+
+}
+
+.bot-answer img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+.bot-answer p {
+    margin-left: 50px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size:16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3f3f3f;
+}
+
+.user-answer {
+    margin: 10px;
+    width: 70%;
+    height: fit-content;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-left: auto;
+}
+
+.user-answer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px ;
+}
+
+.user-answer p {
+    width: fit-content;
+    min-height: fit-content !important;
+    line-height: 40px;
+    line-break: normal !important;
+    background-color: #0084FF;
+    font-size:16px;
+    font-weight: 600;
+    color: #fff;
+    overflow-x: hidden;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 85% !important;
+    background-color: #d6d3d3;
+    color: #6b6b6b;
+}
+.chat-input::placeholder{
+    color:  #242526;
+}
+.input-field i {
+    width: 9%;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    background-color: #0084FF;
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (min-width:280px) and (max-width:528px){
+
+    .chat-header .chat-title {
+        font-size: 18px !important;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .chat-header .chat-title img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        display: block;
+        text-align: center;
+    }
+    .input-field i{
+        width: 30px;
+        height:30px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .chat-input{
+        width: 80% !important;
+        padding: 10px !important;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .bot-answer img ,  .user-answer img{
+        width: 40px;
+        height: 40px;
+    }
+    .bot-answer p , .user-answer p {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: .2px;
+    }
+    .bot-answer ,.user-answer {
+        width: 90%;
+    }
+
+}
+
+
+@media (min-width:529px) and (max-width:772px){
+    .chat-header .chat-title {
+        font-size: 20px !important;
+    }
+    .chat-header .chat-title img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+
+    }
+    .chat-input{
+        width: 85% !important;
+        padding: 10px !important;
+        font-weight: 500;
+    }
+}
